@@ -1,0 +1,9 @@
+numpy
+nltk
+torch
+transformers
+faiss-cpu
+scikit-learn
+tqdm
+requests
+jupyter

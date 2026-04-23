@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Data — too large for git
+data/cadec/
+data/fda/
+data/synthetic/
+
+# Model weights and index — too large for git
+index/
+*.pt
+*.bin
+*.faiss
+
+# Jupyter artifacts
+.jupyter/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit API keys
+.env
+secrets.py
