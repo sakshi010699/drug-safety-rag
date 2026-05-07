@@ -58,4 +58,28 @@ class Chunk:
                 f"preview={preview!r})")
 
 
+@dataclass
+class ChunkStore:
+    """Maps FAISS integer indices back to Chunk objects."""
+
+    def __init__(self):
+        self._chunks= []
+
+    def add(self, chunk: Chunk)->int:
+        idx = len(self._chunks)
+        chunk.vector_index= idx
+        self._chunks.append(chunk)
+        return idx
+
+    def get(self, vector_index: int)-> Chunk:
+        return self._chunks[vector_index]
+
+    def __len__(self):
+        return len(self._chunks)
+
+    def filter_by_drug(self, drug_name: str)->list:
+        return [c for c in self._chunks if c.drug_name.lower()==drug_name.lower()]
+
+
+
 

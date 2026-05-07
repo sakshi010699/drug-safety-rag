@@ -47,7 +47,7 @@ User Query → Query Encoder → Similarity Search → Top-k Chunks
 
 ## Components
 
-**schema.py** — Document and Chunk dataclasses. Every component speaks 
+**schema.py** — Document, ChunkStore and Chunk dataclasses. Every component speaks 
 this schema. Stable IDs derived from content hash for reproducibility.
 
 **cadec_loader.py** — Loads CADEC corpus (1,220 patient forum posts). 
