@@ -1,4 +1,4 @@
-# Drug Safety RAG — Built from Primitives
+# Drug Safety RAG - Built from Primitives
 
 A Retrieval-Augmented Generation system for pharmacovigilance,
 built without LangChain or LlamaIndex.
